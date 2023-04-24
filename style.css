@@ -1,0 +1,103 @@
+@font-face {
+	font-family: "signika-negative";
+	src: url('fonts/signika-negative-regular.woff2?#iefix') format('woff2'),
+	     url('fonts/signika-negative-regular.woff') format('woff'),
+	     url('fonts/signika-negative-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "signika-negative";
+	src: url('fonts/signika-negative-bold.woff2?#iefix') format('woff2'),
+	     url('fonts/signika-negative-bold.woff') format('woff'),
+	     url('fonts/signika-negative-bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+:root {
+	--col-white: #f0f0f0;
+	--col-black: #4d4d4d;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0 1.5em;
+	max-width: 80em;
+	color: var(--col-black);
+	background: var(--col-white);
+	min-height: 100vh;
+	font-family: "signika-negative", sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+	color: inherit;
+}
+
+header {
+	max-width: 55rem;
+	margin: 0 auto 5rem auto;
+	text-align: justify;
+	line-height: 1.5;
+}
+header h1 {
+	margin: 5rem 0 4rem 0;
+	text-align: center;
+	font-size: 2.5em;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+main a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: .5em;
+	color: inherit;
+	text-decoration: none;
+}
+main a span {
+	font-weight: bold;
+	font-size: 2em;
+	transition: transform .25s ease;
+}
+main a:hover span {
+	transform: scale(1.1);
+}
+main a img {
+	height: 6rem;
+	transition: transform .35s ease;
+}
+main a:hover img {
+	transform: rotate(360deg) scale(1.1);
+}
+
+footer {
+	margin: 8rem 0 5rem 0;
+	text-align: center;
+}
+
+
+@media only screen and (min-width: 800px) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+	main a {
+		justify-content: flex-end;
+	}
+	main a span {
+		padding: 0 2rem;
+	}
+	main a:nth-child(even) {
+		flex-direction: row-reverse;
+		transform: translatey(50%);
+	}
+}
