@@ -27,7 +27,7 @@
 body {
 	margin: 0 auto;
 	padding: 0 1.5em;
-	max-width: 80em;
+	max-width: 70em;
 	color: var(--col-black);
 	background: var(--col-white);
 	min-height: 100vh;
@@ -77,7 +77,7 @@ main a img {
 	transition: transform .35s ease;
 }
 main a:hover img {
-	transform: rotate(360deg) scale(1.1);
+	transform: scale(1.1);
 }
 
 footer {
