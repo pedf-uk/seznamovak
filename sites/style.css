@@ -15,7 +15,10 @@
 	font-style: normal;
 }
 body {
-	height: 100vh;
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 1em;
+	margin: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
