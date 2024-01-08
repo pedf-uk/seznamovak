@@ -1,0 +1,33 @@
+@font-face {
+	font-family: "signika-negative";
+	src: url('../fonts/signika-negative-regular.woff2?#iefix') format('woff2'),
+		 url('../fonts/signika-negative-regular.woff') format('woff'),
+		 url('../fonts/signika-negative-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "signika-negative";
+	src: url('../fonts/signika-negative-bold.woff2?#iefix') format('woff2'),
+		 url('../fonts/signika-negative-bold.woff') format('woff'),
+		 url('../fonts/signika-negative-bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #4d4d4d;
+	background: #f0f0f0;
+	font-family: "signika-negative", sans-serif;
+	text-rendering: optimizeLegibility;
+}
+ul {
+	padding: 0;
+	list-style: none;
+	text-align: left;
+}
